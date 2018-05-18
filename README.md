@@ -4,20 +4,17 @@ Resize and pad images to a fixed size while keeping the original apspect ratio w
 
 ## 1.resize images to a fixed size
 
-using `tf.image.resize_images()`
+Use `tf.image.resize_images()`:
 
-`image = tf.image.resize_images(image, [new_height, new_width])
-`
+- `image = tf.image.resize_images(image, [new_height, new_width])`
 
 But the original aspect ratio of images was changed.
 
 ## 2.pad images to a fixed size, or resize to fixed size keeping the original aspect ratio
 
-using `tf.image.pad_to_bounding_box`
+Use `tf.image.pad_to_bounding_box`:
 
-`image = tf.image.pad_to_bounding_box(image, offset_height, offset_width,
-                                       new_height, new_width)
-`
+- `image = tf.image.pad_to_bounding_box(image, offset_height, offset_width, new_height, new_width)`
 
 We need to calculate the offsets first and then pad images to the new sizes.
 However, the padding values is contrined to 0.
