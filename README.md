@@ -2,6 +2,8 @@
 
 Resize and pad images to a fixed size while keeping the original apspect ratio with tensor operations in TensorFlow
 
+Please refer to [this Blog](http://www.yueye.org/2018/resize-an-image-in-tensorflow-while-keeping-the-aspect-ratio.html).
+
 ## 1.resize images to a fixed size
 
 Use `tf.image.resize_images()`:
